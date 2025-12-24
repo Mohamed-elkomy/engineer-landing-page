@@ -1,0 +1,131 @@
+.footer {
+  width: 100%;
+  background-color: var(--color-bg-footer);
+  padding: 35px 60px 26px;
+}
+
+.footerContent {
+  gap: 32px;
+}
+
+.footerColumn {
+  width: 22%;
+  min-width: 220px;
+}
+
+.footerColumn h3 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--color-primary);
+}
+
+.footerColumn p {
+  color: var(--color-text-muted);
+  margin-bottom: 14px;
+  line-height: 2;
+  font-size: 18px;
+  max-width: 350px;
+  text-align: justify;
+  padding-inline: 4px;
+}
+
+.footerColumn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerColumn ul li {
+  margin-bottom: 8px;
+}
+
+.footerColumn ul li a {
+  color: #444;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.2s ease;
+}
+
+.footerColumn ul li a:hover {
+  color: var(--color-primary);
+}
+
+.footerLogo img {
+  width: 140px;
+  margin-top: 8px;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 28px 0 18px;
+}
+
+.copyright {
+  font-size: 18px;
+  color: var(--color-text-main);
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 992px) {
+  .footer {
+    padding: 45px 28px 22px;
+  }
+
+  .footerColumn {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 38px 20px 22px;
+  }
+
+  .footerColumn {
+    width: 100%;
+  }
+
+  .footerColumn p {
+    max-width: 100%;
+    text-align: right;
+  }
+
+  .footerLogo img {
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+/* ================= Scroll To Top ================= */
+.scrollTopBtn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 9999;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollTopBtn:hover {
+  background: var(--color-primary-mid);
+  transform: translateY(-4px);
+}

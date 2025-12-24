@@ -1,0 +1,123 @@
+/* ================= Section ================= */
+.downloadSection {
+  width: 100%;
+  min-height: 70vh;
+  padding: 80px 80px;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-light) 0%,
+    var(--color-primary) 100%
+  );
+  color: var(--color-text-main);
+  gap: 40px;
+}
+
+/* ================= Layout ================= */
+.downloadLeft {
+  width: 55%;
+}
+
+.downloadRight {
+  width: 38%;
+}
+
+/* ================= Text ================= */
+.downloadTitle {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.downloadText {
+  font-size: 23px;
+  line-height: 2;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+/* ================= Buttons ================= */
+.downloadButtons {
+  gap: 18px;
+}
+
+.downloadBtn {
+  width: 170px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.downloadBtn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: var(--shadow-soft);
+}
+
+/* ================= Image ================= */
+.downloadImg {
+  width: 70%;
+  max-width: 280px;
+  border-radius: var(--radius-lg);
+  background-color: #fff;
+  padding: 22px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* ================= Tablet ================= */
+@media (max-width: 992px) {
+  .downloadSection {
+    padding: 60px 40px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .downloadLeft,
+  .downloadRight {
+    width: 100%;
+  }
+
+  .downloadImg {
+    width: 55%;
+    max-width: 240px;
+    margin-bottom: 30px;
+  }
+
+  .downloadTitle {
+    font-size: 28px;
+  }
+
+  .downloadText {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+
+  .downloadButtons {
+    justify-content: center;
+  }
+
+  .downloadBtn {
+    width: 150px;
+  }
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 576px) {
+  .downloadSection {
+    padding: 40px 20px;
+  }
+
+  .downloadImg {
+    width: 70%;
+    max-width: 220px;
+  }
+
+  .downloadTitle {
+    font-size: 24px;
+  }
+
+  .downloadText {
+    font-size: 16px;
+  }
+
+  .downloadBtn {
+    width: 130px;
+  }
+}

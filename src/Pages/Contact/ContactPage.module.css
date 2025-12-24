@@ -1,0 +1,53 @@
+.contactPage {
+  padding: 72px 0;
+}
+
+/* Titles */
+.contactTitle {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.subTitle {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+/* Card */
+.contactCard {
+  background: #ffffff;
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* ================= Tablet ================= */
+@media (max-width: 992px) {
+  .contactPage {
+    padding: 56px 0;
+  }
+
+  .contactTitle {
+    font-size: 28px;
+  }
+
+  .contactCard {
+    padding: 26px;
+  }
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 576px) {
+  .contactPage {
+    padding: 40px 0;
+  }
+
+  .contactTitle {
+    font-size: 24px;
+  }
+
+  .contactCard {
+    padding: 22px;
+  }
+}

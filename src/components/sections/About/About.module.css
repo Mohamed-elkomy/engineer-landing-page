@@ -1,0 +1,154 @@
+.aboutSection {
+  padding: 80px 0;
+}
+
+.aboutTitle {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 18px;
+}
+
+.aboutText {
+  font-size: 20px;
+  line-height: 1.9;
+  color: var(--color-text-main);
+  margin-bottom: 30px;
+}
+
+.aboutFeature {
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.iconCircle {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    var(--color-primary),
+    var(--color-primary-light)
+  );
+  color: #fff;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.aboutFeature h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.aboutFeature p {
+  font-size: 17px;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+}
+
+/* ================= Carousel Card ================= */
+.aboutCarousel {
+  background: #fff;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  position: relative;
+}
+
+.aboutImg {
+  border-radius: 12px;
+  object-fit: cover;
+  aspect-ratio: 4 / 3;
+  width: 100%;
+}
+
+/* ================= Carousel Controls ================= */
+:global(.carousel-control-prev),
+:global(.carousel-control-next) {
+  width: 44px;
+  height: 44px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+}
+
+:global(.carousel-control-prev) {
+  left: -22px;
+}
+
+:global(.carousel-control-next) {
+  right: -22px;
+}
+
+:global(.carousel-control-prev:hover),
+:global(.carousel-control-next:hover) {
+  background-color: var(--color-primary-mid);
+}
+
+:global(.carousel-control-prev-icon),
+:global(.carousel-control-next-icon) {
+  filter: brightness(0) invert(1);
+  width: 18px;
+  height: 18px;
+}
+
+/* ================= Tablet ================= */
+@media (max-width: 992px) {
+  .aboutTitle {
+    font-size: 30px;
+  }
+
+  .aboutText {
+    font-size: 18px;
+  }
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 576px) {
+  .aboutSection {
+    padding: 50px 0;
+  }
+
+  .aboutTitle {
+    font-size: 26px;
+  }
+
+  .aboutText {
+    font-size: 17px;
+  }
+
+  .aboutFeature {
+    gap: 10px;
+  }
+
+  .aboutFeature h3 {
+    font-size: 18px;
+  }
+
+  .aboutFeature p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .iconCircle {
+    margin-bottom: 8px;
+  }
+
+  :global(.carousel-control-prev) {
+    left: -10px;
+  }
+
+  :global(.carousel-control-next) {
+    right: -10px;
+  }
+}
+
+/* ================= Reduced Motion ================= */
+@media (prefers-reduced-motion: reduce) {
+  .aboutCarousel {
+    scroll-behavior: auto;
+  }
+}

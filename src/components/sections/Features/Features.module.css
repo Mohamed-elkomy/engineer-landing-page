@@ -1,0 +1,147 @@
+/* ================= Section ================= */
+.featuresSection {
+  padding: 80px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* Titles */
+.featuresTitle {
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.featuresSubtitle {
+  font-size: 22px;
+  color: var(--color-text-muted);
+  margin-bottom: 36px;
+}
+
+/* ================= Slider Wrapper ================= */
+.sliderWrapper {
+  position: relative;
+}
+
+/* Swiper */
+.featuresSwiper {
+  padding: 20px 0 40px;
+}
+
+/* Slide */
+:global(.swiper-slide) {
+  display: flex;
+  height: auto;
+}
+
+/* ================= Card ================= */
+.featureCard {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 22px 20px 24px;
+  box-shadow: var(--shadow-soft);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+}
+
+.icon {
+  font-size: 36px;
+  color: var(--color-primary-light);
+  margin-bottom: 12px;
+}
+
+.featureCard h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.featureCard p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--color-text-muted);
+}
+
+/* ================= Custom Navigation Buttons ================= */
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  z-index: 5;
+  box-shadow: 0 10px 22px rgba(185, 89, 30, 0.35);
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+/* Positions */
+.prevBtn {
+  left: -12px;
+}
+
+.nextBtn {
+  right: -12px;
+}
+
+/* Hover */
+.prevBtn:hover,
+.nextBtn:hover {
+  background: var(--color-primary-mid);
+  transform: translateY(-50%) scale(1.08);
+}
+
+/* Arrow */
+.prevBtn::before,
+.nextBtn::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+/* Directions */
+.prevBtn::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.nextBtn::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* ================= Mobile ================= */
+@media (max-width: 576px) {
+  .prevBtn,
+  .nextBtn {
+    display: none;
+  }
+
+  .featureCard p {
+    font-size: 16px;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .featureCard,
+  .featureCard:hover {
+    transition: none;
+    transform: none;
+  }
+}

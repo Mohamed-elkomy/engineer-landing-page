@@ -1,0 +1,68 @@
+/* ================= Global CSS ================= */
+@font-face {
+  font-family: "Cairo";
+  src: url("./assets/fonts/Cairo/Cairo-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("./assets/fonts/Cairo/Cairo-Bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cairo";
+  src: url("./assets/fonts/Cairo/Cairo-Black.ttf") format("truetype");
+  font-weight: 900;
+}
+
+/* ================= Variables ================= */
+:root {
+  --color-primary: #b9591e;
+  --color-primary-mid: #c57a34;
+  --color-primary-light: #f5ac36;
+  --color-accent: #bab696;
+
+  --color-text-main: #222222;
+  --color-text-muted: #555555;
+
+  /* Global backgrounds */
+  --color-bg-soft: #f7f4ef;
+  --color-bg-footer: #efe8dc;
+
+  --radius-lg: 18px;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= Reset ================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= Base ================= */
+body,
+#root {
+  min-height: 100vh;
+  background-color: var(--color-bg-soft);
+  color: var(--color-text-main);
+  font-family: "Cairo", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ================= Accessibility ================= */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
