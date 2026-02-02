@@ -129,3 +129,37 @@
   background: var(--color-primary-mid);
   transform: translateY(-4px);
 }
+
+/* Copyright */
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.brandInline {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  opacity: 0.9;
+  transition: opacity var(--transition-fast);
+}
+
+.brandInline:hover {
+  opacity: 1;
+}
+
+.brandInline img {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.brandInline strong {
+  font-weight: 700;
+  color: var(--text-primary);
+}
