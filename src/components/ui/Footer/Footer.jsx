@@ -1,15 +1,14 @@
 import { Link } from "react-router-dom";
-import logo from "../../../assets/images/logo-2.png";
-import styles from "./Footer.module.css";
 import { useEffect, useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 
+import logo from "../../../assets/images/logo-2.png";
 import brmjaLogo from "../../../assets/images/logo.svg";
+import styles from "./Footer.module.css";
 
 export default function Footer() {
   const [showButton, setShowButton] = useState(false);
 
-  /* Handle Scroll-To-Top Button */
   useEffect(() => {
     const handleScroll = () => {
       setShowButton(window.scrollY > 250);
@@ -23,22 +22,21 @@ export default function Footer() {
 
   return (
     <>
-      {/* FOOTER */}
       <footer className={`${styles.footer} text-end`} dir="rtl">
         <div
           className={`${styles.footerContent} d-flex flex-wrap justify-content-between`}
         >
-          {/* About Column */}
+          {/* About */}
           <div className={styles.footerColumn}>
             <h3>عن الشركة</h3>
             <p>
-              المهندس للكابلات الكهربائية هي شركة متخصصة في تصنيع وتوزيع
-              الكابلات والأسلاك الكهربائية، وتقديم حلول عالية الجودة للمشروعات
-              السكنية والتجارية والصناعية.
+              المهندس للكابلات الكهربائية شركة متخصصة في تصنيع وتوزيع الكابلات
+              والأسلاك الكهربائية، وتقديم حلول عالية الجودة للمشروعات السكنية
+              والتجارية والصناعية.
             </p>
           </div>
 
-          {/* Important Links */}
+          {/* Links */}
           <div className={styles.footerColumn}>
             <h3>روابط هامة</h3>
             <ul>
@@ -57,23 +55,23 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div className={styles.footerColumn}>
             <h3>تواصل معنا</h3>
-            <p>01000000000 📞</p>
-            <p>support@elmohandes-cables.com ✉️</p>
-            <p>القاهرة - مصر 📍</p>
+            <p>📞 01000000000</p>
+            <p>✉️ support@elmohandes-cables.com</p>
+            <p>📍 القاهرة - مصر</p>
           </div>
 
           {/* Logo */}
           <div className={`${styles.footerColumn} ${styles.footerLogo}`}>
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Elmohandes Cables Logo" />
           </div>
         </div>
 
         <hr />
 
-        {/* Copyright + Logo (Translated) */}
+        {/* Brand */}
         <div className={styles.copyright}>
           <a
             href="https://brmja.tech/"
@@ -81,18 +79,13 @@ export default function Footer() {
             rel="noopener noreferrer"
             className={styles.brandInline}
           >
-            <img
-              src={brmjaLogo}
-              alt={"Brmja Tech – شركة تطوير برمجيات"}
-              loading="lazy"
-            />
-
+            <img src={brmjaLogo} alt="Brmja Tech" loading="lazy" />
             <span>© 2025 Brmja Tech – جميع الحقوق محفوظة</span>
           </a>
         </div>
       </footer>
 
-      {/* SCROLL TO TOP */}
+      {/* Scroll To Top */}
       <button
         className={`${styles.scrollTopBtn} ${showButton ? styles.show : ""}`}
         onClick={scrollToTop}
