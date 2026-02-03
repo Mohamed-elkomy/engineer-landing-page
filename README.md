@@ -1,76 +1,16 @@
-# Elmohandes Landing Page
+# React + Vite
 
-A modern and responsive landing page for the **Elmohandes Electric Cables** application.  
-The project aims to present the app idea, key features, company information, policy pages, and a contact form in a clean and user-friendly way.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Built with React and optimized for performance, scalability, and future backend integration.
+Currently, two official plugins are available:
 
----
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## 🚀 Live Demo
-https://engineer-landing-page-r4bb6v2wc-komys-projects.vercel.app/
+## React Compiler
 
----
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## 📦 Repository
-https://github.com/Mohamed-elkomy/engineer-landing-page
+## Expanding the ESLint configuration
 
----
-
-## 🛠️ Tech Stack
-- React.js (Vite)
-- React Router
-- CSS Modules
-- Bootstrap 5
-- Animate.css
-- JavaScript (ES6)
-
----
-
-## ✨ Features
-- Fully responsive design (Mobile / Tablet / Desktop)
-- RTL support
-- Clean and scalable project structure
-- Lazy loading for routes
-- Custom loader during page loading
-- Error Boundary handling
-- Contact form with validation
-- Scroll-to-top on route change
-- Clean, readable, and maintainable code
-
----
-
-## 📂 Project Structure
-```text
-src/
-├─ assets/
-│  ├─ images/
-│  ├─ fonts/
-│  └─ css/
-├─ components/
-│  ├─ ui/
-│  └─ sections/
-├─ layouts/
-├─ pages/
-├─ routes/
-├─ styles/
-├─ App.jsx
-├─ main.jsx
-└─ index.css
-
-
-▶️ Run Locally
-npm install
-npm run dev
-
-
-📌 Notes
-
-Front-End only project
-
-Ready for backend integration
-
-Suitable as a production-ready landing page or portfolio project
-
-
-
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.

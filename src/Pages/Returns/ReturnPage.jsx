@@ -1,4 +1,4 @@
-import PolicyCard from "../../components/sections/Policy/PolicyCard";
+import PolicyCard from "../../components/Policy/PolicyCard";
 import styles from "../../assets/css/PolicyPages.module.css";
 
 export default function ReturnPolicyPage() {

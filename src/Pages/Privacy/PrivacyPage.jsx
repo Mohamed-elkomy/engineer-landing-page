@@ -1,5 +1,5 @@
 import styles from "../../assets/css/PolicyPages.module.css";
-import PolicyCard from "../../components/sections/Policy/PolicyCard";
+import PolicyCard from "../../components/Policy/PolicyCard";
 
 export default function PrivacyPage() {
   return (

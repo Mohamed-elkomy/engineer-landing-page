@@ -1,4 +1,4 @@
-import PolicyCard from "../../components/sections/Policy/PolicyCard";
+import PolicyCard from "../../components/Policy/PolicyCard";
 import { Link } from "react-router-dom";
 import styles from "../../assets/css/PolicyPages.module.css";
 

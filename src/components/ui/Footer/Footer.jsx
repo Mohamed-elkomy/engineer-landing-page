@@ -18,21 +18,21 @@ export default function Footer() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  const scrollToTop = () =>
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <>
       <footer className={`${styles.footer} text-end`} dir="rtl">
-        <div
-          className={`${styles.footerContent} d-flex flex-wrap justify-content-between`}
-        >
+        <div className={`${styles.footerContent} d-flex flex-wrap justify-content-between`}>
+          
           {/* About */}
           <div className={styles.footerColumn}>
             <h3>عن الشركة</h3>
             <p>
-              المهندس للكابلات الكهربائية شركة متخصصة في تصنيع وتوزيع الكابلات
-              والأسلاك الكهربائية، وتقديم حلول عالية الجودة للمشروعات السكنية
-              والتجارية والصناعية.
+              المهندس للكابلات الكهربائية شركة متخصصة في تصنيع وتوزيع
+              الكابلات والأسلاك الكهربائية، وتقديم حلول عالية الجودة
+              للمشروعات السكنية والتجارية والصناعية.
             </p>
           </div>
 
@@ -40,18 +40,10 @@ export default function Footer() {
           <div className={styles.footerColumn}>
             <h3>روابط هامة</h3>
             <ul>
-              <li>
-                <Link to="/">الرئيسية</Link>
-              </li>
-              <li>
-                <Link to="/privacy">سياسة الخصوصية</Link>
-              </li>
-              <li>
-                <Link to="/return">سياسة الاسترجاع والاسترداد</Link>
-              </li>
-              <li>
-                <Link to="/terms">الشروط والأحكام</Link>
-              </li>
+              <li><Link to="/">الرئيسية</Link></li>
+              <li><Link to="/privacy">سياسة الخصوصية</Link></li>
+              <li><Link to="/return">سياسة الاسترجاع والاسترداد</Link></li>
+              <li><Link to="/terms">الشروط والأحكام</Link></li>
             </ul>
           </div>
 
