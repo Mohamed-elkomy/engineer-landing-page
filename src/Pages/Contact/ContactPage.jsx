@@ -21,14 +21,14 @@ export default function ContactPage() {
     return Object.keys(nextErrors).length === 0;
   };
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
-    setForm((prev) => ({ ...prev, [name]: value }));
-    setErrors((prev) => ({ ...prev, [name]: "" }));
+    setForm(prev => ({ ...prev, [name]: value }));
+    setErrors(prev => ({ ...prev, [name]: "" }));
     setStatus("");
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = e => {
     e.preventDefault();
     if (!validate()) return;
 
@@ -54,8 +54,8 @@ export default function ContactPage() {
               <div className="mb-4">
                 <h2 className="h5 fw-bold">بيانات التواصل</h2>
                 <ul className="list-unstyled mb-0">
-                  <li className="mb-2">📞 01000000000</li>
-                  <li className="mb-2">✉️ support@elmohandes-cables.com</li>
+                  <li className="mb-2">📞 01024298289</li>
+                  <li className="mb-2">✉️ depa01777@icloud.com</li>
                   <li>📍 القاهرة - مصر</li>
                 </ul>
               </div>
@@ -72,8 +72,9 @@ export default function ContactPage() {
                     id="name"
                     name="name"
                     type="text"
-                    className={`form-control ${errors.name ? "is-invalid" : ""
-                      }`}
+                    className={`form-control ${
+                      errors.name ? "is-invalid" : ""
+                    }`}
                     value={form.name}
                     onChange={handleChange}
                   />
@@ -90,8 +91,9 @@ export default function ContactPage() {
                     id="email"
                     name="email"
                     type="email"
-                    className={`form-control ${errors.email ? "is-invalid" : ""
-                      }`}
+                    className={`form-control ${
+                      errors.email ? "is-invalid" : ""
+                    }`}
                     value={form.email}
                     onChange={handleChange}
                   />
@@ -108,8 +110,9 @@ export default function ContactPage() {
                     id="message"
                     name="message"
                     rows="4"
-                    className={`form-control ${errors.message ? "is-invalid" : ""
-                      }`}
+                    className={`form-control ${
+                      errors.message ? "is-invalid" : ""
+                    }`}
                     value={form.message}
                     onChange={handleChange}
                   />
