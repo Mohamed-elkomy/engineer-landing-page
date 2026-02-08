@@ -82,8 +82,8 @@ export default function Features() {
             }}
             className={styles.featuresSwiper}
           >
-            {FEATURES.map((item, index) => (
-              <SwiperSlide key={index}>
+            {FEATURES.map((item) => (
+              <SwiperSlide key={item.title}>
                 <div className={styles.featureCard}>
                   <div className={styles.icon}>{item.icon}</div>
                   <h3>{item.title}</h3>

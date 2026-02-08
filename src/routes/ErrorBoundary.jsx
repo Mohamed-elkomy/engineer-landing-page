@@ -18,7 +18,7 @@ export default class ErrorBoundary extends Component {
   render() {
     if (this.state.hasError) {
       return (
-        <section className="container text-center py-5" dir="rtl">
+        <section className="container text-center py-5">
           <h1 className="display-6 fw-bold mb-3">حدث خطأ غير متوقع</h1>
           <p className="text-muted mb-4">
             نعمل على حل المشكلة. يمكنك العودة للصفحة الرئيسية ومتابعة التصفح.

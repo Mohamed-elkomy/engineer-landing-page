@@ -143,7 +143,6 @@ export default function Header() {
                 ref={offcanvasRef}
                 className={`offcanvas offcanvas-end ${styles.offcanvas}`}
                 tabIndex="-1"
-                dir="rtl"
                 aria-labelledby="mobileMenuLabel"
             >
                 <div className="offcanvas-header">

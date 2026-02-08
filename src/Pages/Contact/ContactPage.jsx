@@ -37,7 +37,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className={styles.contactPage} dir="rtl">
+    <section className={styles.contactPage}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8 col-md-10 col-12">
@@ -129,7 +129,10 @@ export default function ContactPage() {
                 </button>
 
                 {status && (
-                  <div className="alert alert-success mt-3 mb-0 text-center">
+                  <div
+                    className="alert alert-success mt-3 mb-0 text-center"
+                    aria-live="polite"
+                  >
                     {status}
                   </div>
                 )}

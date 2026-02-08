@@ -5,8 +5,10 @@ import ScrollToTop from "./routes/ScrollToTop";
 export default function App() {
   return (
     <BrowserRouter>
-      <ScrollToTop />
-      <RouterApp />
+      <div dir="rtl">
+        <ScrollToTop />
+        <RouterApp />
+      </div>
     </BrowserRouter>
   );
 }

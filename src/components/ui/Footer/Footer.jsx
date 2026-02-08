@@ -22,7 +22,7 @@ export default function Footer() {
 
   return (
     <>
-      <footer className={`${styles.footer} text-end`} dir="rtl">
+      <footer className={`${styles.footer} text-end`}>
         <div
           className={`${styles.footerContent} d-flex flex-wrap justify-content-between`}
         >
