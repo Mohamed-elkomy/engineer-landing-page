@@ -1,22 +1,22 @@
 import React from "react";
 import styles from "./About.module.css";
 
-import img1 from "../../../assets/images/img.png";
-import img2 from "../../../assets/images/img1.png";
-import img3 from "../../../assets/images/img2.png";
+import img1 from "../../../assets/images/3.png";
+import img2 from "../../../assets/images/4.png";
+import img3 from "../../../assets/images/5.png";
 
 export default function About() {
   return (
     <section className={styles.aboutSection} id="about">
       <div className="container">
         <div className="row align-items-center">
-
           {/* النص */}
           <div className="col-lg-6 col-md-6 col-12 text-end">
             <h1 className={styles.aboutTitle}>من نحن</h1>
 
             <p className={styles.aboutText}>
-              تطبيق المهندس هو منصة متخصصة في توفير الكابلات والأسلاك الكهربائية...
+              تطبيق المهندس هو منصة متخصصة في توفير الكابلات والأسلاك
+              الكهربائية...
             </p>
 
             {/* Feature 1 */}
@@ -29,7 +29,8 @@ export default function About() {
               <div>
                 <h3>نصائح فنية دقيقة</h3>
                 <p>
-                  إرشادات هندسية واضحة لاختيار الأسلاك المناسبة وحساب الأحمال بدقة.
+                  إرشادات هندسية واضحة لاختيار الأسلاك المناسبة وحساب الأحمال
+                  بدقة.
                 </p>
               </div>
             </div>
@@ -43,9 +44,7 @@ export default function About() {
               </div>
               <div>
                 <h3>متابعة احتياجات مشروعك</h3>
-                <p>
-                  إدارة سهلة لاحتياجاتك من المقاسات والكميات خطوة بخطوة.
-                </p>
+                <p>إدارة سهلة لاحتياجاتك من المقاسات والكميات خطوة بخطوة.</p>
               </div>
             </div>
           </div>
@@ -134,7 +133,6 @@ export default function About() {
               </button>
             </div>
           </div>
-
         </div>
       </div>
     </section>

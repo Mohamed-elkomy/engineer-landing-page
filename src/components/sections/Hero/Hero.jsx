@@ -7,9 +7,10 @@ export default function Hero() {
   return (
     <section className={`${styles.hero} container`}>
       <div className="row align-items-center">
-
         {/* TEXT SIDE */}
-        <div className={`col-lg-6 col-md-6 col-12 text-end ${styles.heroRight}`}>
+        <div
+          className={`col-lg-6 col-md-6 col-12 text-end ${styles.heroRight}`}
+        >
           <h1 className={`${styles.title} animate__animated animate__fadeInUp`}>
             المهندس – حلول متقدمة للكابلات والأسلاك الكهربائية
           </h1>
@@ -17,16 +18,17 @@ export default function Hero() {
           <h2
             className={`${styles.subtitle} animate__animated animate__fadeInUp animate__delay-1s`}
           >
-            خبرة هندسية في توفير أفضل أنواع الأسلاك والكابلات بمعايير جودة وأمان عالمية
+            خبرة هندسية في توفير أفضل أنواع الأسلاك والكابلات بمعايير جودة وأمان
+            عالمية
           </h2>
 
           <p
             className={`${styles.desc} animate__animated animate__fadeInUp animate__delay-2s`}
           >
-            نوفر أحدث أنواع الكابلات الكهربائية الموثوقة والمعتمدة، مع دعم فني متخصص
-            يساعدك على اختيار المقاسات المناسبة، حساب الأحمال بدقة، وضمان أعلى كفاءة
-            في التركيبات الكهربائية للمشروعات السكنية والصناعية. مع المهندس… الجودة
-            والأمان أساس عملنا.
+            نوفر أحدث أنواع الكابلات الكهربائية الموثوقة والمعتمدة، مع دعم فني
+            متخصص يساعدك على اختيار المقاسات المناسبة، حساب الأحمال بدقة، وضمان
+            أعلى كفاءة في التركيبات الكهربائية للمشروعات السكنية والصناعية. مع
+            المهندس… الجودة والأمان أساس عملنا.
           </p>
 
           {/* Store buttons */}
@@ -60,7 +62,6 @@ export default function Hero() {
             loading="lazy"
           />
         </div>
-
       </div>
     </section>
   );
